@@ -1,0 +1,19 @@
+  }
+
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!correo.match(emailPattern)) {
+            document.getElementById('email-error').textContent = 'Ingresa una dirección de correo electrónico válida.';
+            hasError = true;
+        } else {
+            document.getElementById('email-error').textContent = '';
+        }
+
+        if (!hasError) {
+            alert('¡Usuario registrado exitosamente!');
+        }
+
+        return !hasError;
+    }
+</script>
+</body>
+</html>
